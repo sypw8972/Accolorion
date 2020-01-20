@@ -1,0 +1,386 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "creationData": {
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
+      "projectGuid": "85bfc104-4edd-4213-bd2c-6e0c2950da58",
+      "lastModifiedDate": 1510287133520,
+      "creationDate": 1502673320976
+    },
+    "sourceDirectory": "www",
+    "startFile": "index.html",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "libraries": [],
+    "serviceMethods": [],
+    "cordovaPluginsDirectory": "plugins",
+    "cordovaPlugins": [
+      {
+        "id": "cordova-plugin-statusbar",
+        "version": "2.1.3",
+        "originType": "cordova.io",
+        "selectedState": "Included",
+        "name": "StatusBar",
+        "origin": "cordova-plugin-statusbar",
+        "data": {},
+        "paramvals": {},
+        "permissions": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "topLevel": true,
+        "checksum": "c0146fbc",
+        "gitref": "",
+        "cordovaVersion": ">=3.0.0",
+        "description": "Cordova StatusBar Plugin"
+      },
+      {
+        "id": "cordova-plugin-device",
+        "version": "1.1.2",
+        "selectedState": "Included",
+        "originType": "cordova.io",
+        "name": "Device",
+        "origin": "cordova-plugin-device",
+        "data": {},
+        "paramvals": {},
+        "permissions": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "topLevel": true,
+        "checksum": "2373ccea",
+        "gitref": "",
+        "description": "Cordova Device Plugin",
+        "cordovaVersion": ">=3.0"
+      },
+      {
+        "id": "cordova-plugin-splashscreen",
+        "version": "3.2.2",
+        "selectedState": "Included",
+        "originType": "cordova.io",
+        "name": "Splashscreen",
+        "origin": "cordova-plugin-splashscreen",
+        "data": {},
+        "paramvals": {},
+        "permissions": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "topLevel": true,
+        "checksum": "47137083",
+        "gitref": "",
+        "description": "Cordova Splashscreen Plugin",
+        "cordovaVersion": ">=3.0"
+      },
+      {
+        "id": "cordova-plugin-vibration",
+        "name": "Vibration",
+        "version": "2.1.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-vibration",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-vibration",
+        "selectedState": "Included",
+        "checksum": "cf9984de",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.VIBRATE"
+          ]
+        },
+        "description": "Cordova Vibration Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-x-socialsharing",
+        "name": "SocialSharing",
+        "version": "5.2.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-x-socialsharing",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-x-socialsharing",
+        "selectedState": "Included",
+        "checksum": "6a7fd0fe",
+        "dependsOn": [
+          "es6-promise-plugin"
+        ],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Eddy Verbruggen",
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "\n    Share text, images (and other files), or a link via the native sharing widget of your device.\n    Android is fully supported, as well as iOS 6 and up. WP8 has somewhat limited support.\n  ",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "es6-promise-plugin",
+        "name": "Promise",
+        "version": "4.1.0",
+        "originType": "cordova.io",
+        "origin": "es6-promise-plugin",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/es6-promise-plugin",
+        "selectedState": "Included",
+        "checksum": "272e81c6",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Vlad Stirbu",
+        "permissions": {},
+        "description": "\n    A polyfill for ES6-style Promises, tracking npm es6-promise\n  ",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-x-socialsharing"
+        ],
+        "custom": "true"
+      },
+      {
+        "id": "cordova-plugin-admobpro",
+        "name": "AdMob Plugin Pro",
+        "version": "2.29.27",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-admobpro",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-admobpro",
+        "selectedState": "Included",
+        "checksum": "24a7dd0b",
+        "dependsOn": [
+          "cordova-plugin-extension"
+        ],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0",
+        "author": "Liming Xie",
+        "permissions": {
+          "android:name": [
+            "android.permission.INTERNET",
+            "android.permission.ACCESS_NETWORK_STATE"
+          ]
+        },
+        "description": "Ultimate Cordova Plugin for Google AdMob and DFP to monetize hybrid apps. Show mobile Ad with single line of JavaScript. Compatible with Cordova CLI, PhoneGap Build, Intel XDK/Crosswalk, Google ChromeApp, Ionic, Meteor, etc.",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      },
+      {
+        "id": "cordova-plugin-extension",
+        "name": "Cordova Plugin Extension",
+        "version": "1.5.2",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-extension",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-extension",
+        "selectedState": "Included",
+        "checksum": "30dbed18",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0",
+        "author": "Liming Xie",
+        "permissions": {},
+        "description": "Common interface and reusable code, as dependency of other plugins",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-admobpro"
+        ],
+        "custom": "true"
+      }
+    ],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "19",
+          "android-targetSdkVersion": "21",
+          "android-installLocation": "auto",
+          "Fullscreen": true,
+          "Orientation": "landscape",
+          "android-signed": true,
+          "AndroidLaunchMode": "singleTop"
+        },
+        "isActive_": true,
+        "certificateId_": "_LJaLpP8NkKz3tAMvpagXg2",
+        "cordovaCLIVersion_": "6.2.0",
+        "crosswalkVersion_": "23",
+        "appName_": "ColorAccordion",
+        "appID_": "xdk.intel.template",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "market:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "appDescription_": "Intel XDK template",
+        "appAuthor_": "Intel XDK",
+        "signed_": true
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "exit-on-suspend": false,
+          "deployment-target": "8.0",
+          "ios-configuration": "adhoc",
+          "Fullscreen": false,
+          "Orientation": "portrait"
+        },
+        "isActive_": true,
+        "certificateId_": "",
+        "cordovaCLIVersion_": "6.2.0",
+        "crosswalkVersion_": "23",
+        "appName_": "ColorAccordion",
+        "appID_": "xdk.intel.template",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "itms:*",
+            "itms-apps:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [],
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "appDescription_": "Intel XDK template",
+        "appAuthor_": "Intel XDK"
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {
+          "windows-publisher-display-name": "",
+          "windows-publisher-id": "",
+          "Fullscreen": false,
+          "Orientation": "portrait"
+        },
+        "isActive_": true,
+        "certificateId_": "",
+        "cordovaCLIVersion_": "6.2.0",
+        "crosswalkVersion_": "23",
+        "appName_": "ColorAccordion",
+        "appID_": "xdk.intel.template",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "appVersionCode_": "1",
+        "appDescription_": "Intel XDK template",
+        "appAuthor_": "Intel XDK"
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "Intel XDK Template",
+        "appID_": "xdk.intel.template",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appDescription_": "Intel XDK template",
+        "appAuthor_": "Intel XDK"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appName_": "ColorAccordion",
+        "appID_": "xdk.intel.template",
+        "appVersion_": "0.0.1",
+        "appDescription_": "Intel XDK template",
+        "appAuthor_": "Intel XDK"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": [
+      "XDK-disallow-legacy-whitelist"
+    ],
+    "testDirectory": "test"
+  }
+}

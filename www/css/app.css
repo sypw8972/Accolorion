@@ -1,0 +1,416 @@
+/*
+ * Please see the included README.md file for license terms and conditions.
+ */
+
+
+/* This file is completely optional and not required. */
+/* Note the reference that includes it in the index.html file. */
+
+
+/* Disable certain interactions on touch devices */
+/* SOURCE: https://github.com/ftlabs/fastclick/blob/master/examples/input.html */
+/* LICENSE: https://github.com/ftlabs/fastclick/blob/master/LICENSE */
+body {
+    -webkit-touch-callout: none ;
+    -webkit-text-size-adjust: none ; -ms-text-size-adjust: none ;
+    -webkit-user-select: none ; -moz-user-select: none ; -ms-user-select: none ; user-select: none ;
+    -webkit-highlight: none ;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) ;
+    -webkit-tap-highlight-color: transparent ;      /* For some Androids */
+}
+
+/* Recommended for Windows 8 Phone */
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+html {
+    -ms-touch-action: pan-x ;
+}
+
+/* Recommended for Windows 8 Phone */
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+body {
+    -ms-touch-action: pan-y ;
+    -ms-content-zooming: none ;
+}
+
+/* allow copy-paste */
+input, textarea  {
+    -webkit-user-select: text ; -moz-user-select: text ; -ms-user-select: text ; user-select: text ;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+p {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 8vh;
+    font-family: sans-serif;
+    text-align: center;
+    border-color: black;
+    margin: 0;
+}
+
+#menu {
+    background-color:rgb(54,54,54); 
+    width:100vw; 
+    height:100vh;
+    z-index: 1;
+}
+
+#volbox {
+    background-color: black;
+    width: 8vw;
+    height: 4vw;
+    float: left;
+    border-radius: 4vw;
+    border: 1vw solid rgb(54,54,54);
+    margin-left: 4.5vw;
+}
+
+#volic {
+    width: 3vw;
+    height: 3vw;
+    padding-top: 0.5vw;
+    padding-left: 1.4vw;
+    float: left;    
+}
+
+#volnum {
+    color: white; 
+    float: left; 
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 3.4vw;
+    display: none;
+}
+
+#coinbox {
+    background-color: black;
+    width: 18vw;
+    height: 4vw;
+    float: right;
+    border-radius: 4vw;
+    border: 1vw solid rgb(54,54,54);
+    margin-right: 7vw;
+    padding-top: 0.22vw;
+}
+
+#coinic {
+    width: 3vw;
+    height: 3vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+    float: left;
+}
+
+#coinum {
+    color: white; 
+    float: left; 
+    width: 12vw;
+    height: 3vw;
+    font-size: 2.5vw;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: right;
+}
+
+.buttons {
+    width: 17.64vw;
+    height: 17.64vw;
+    padding-left: 4.88vw;
+}
+
+.buttons:active {
+    width: 17vw;
+    height: 17vw;
+    padding: 0.32vw;
+    padding-left: 5.2vw;
+}
+
+#buttonbody {
+    width: 100vw;
+    height: 50.16vw;
+    padding-left: 1vw;
+    padding-top: calc(50vh - 25.08vw);
+}
+
+#over {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    animation-name: gameover;
+    animation-duration: 1s;
+    z-index: 2;
+    position: absolute;
+    display:none; 
+    margin:auto;"
+}
+
+#chance {
+    z-index: 3;
+    display:none; 
+    margin:0; 
+    padding:0; 
+    overflow:hidden; 
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    animation-name: chancepopup;
+    animation-duration: 0.3s;
+}
+
+.onemorechance {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 12vh;
+    font-family: sans-serif;
+    text-align: center;
+    animation-name: overcontent;
+    animation-duration: 1s;
+}
+
+#tryagain {
+    font-size: 14vh;
+    padding: 21vh;
+}
+
+#yup {
+    position: absolute;
+    top: 60vh;
+    left: 25vw;
+}
+
+#nope {
+    position: absolute;
+    top: 60vh;
+    right: 25vw;
+}
+
+#yup:active {
+    color: blue;
+    top: 61.5vh;
+    left: 26vw;
+    font-size: 10vh;
+}
+
+#nope:active {
+    color: red;
+    top: 61.5vh;
+    right: 26vw;
+    font-size: 10vh;
+}
+
+#over_tryagain {
+    z-index: 4;
+    display:none; 
+    margin:0; 
+    padding:0; 
+    overflow:hidden; 
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#startfrom {
+    z-index: 3;
+    margin:0; 
+    padding:0; 
+    overflow:hidden; 
+    position:absolute;
+    left:30vw;
+    top:30vh;
+    width:40vw;
+    height:40vh;
+    background-color: white;
+    border-radius: 2vw;
+    animation-name: startfrompopup;
+    animation-duration: 0.1s;
+}
+
+#againfromlev, #justablock {
+    position: relative;
+    background-color: transparent;
+    color: darkgray;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    animation-name: overcontent;
+    animation-duration: 0.6s;
+}
+
+#againfromlev{
+    color: black;
+    font-size: 6vh; 
+    padding: 6vh;
+}
+
+#yas, #nah {
+    font-size: 6vh;
+}
+
+#yas:active {
+    color: blue;
+}
+
+#nah:active {
+    color: red;
+}
+
+#play {
+    background-color: white;
+    position: absolute;
+    display:none; 
+    margin:0; 
+    padding:0; 
+    overflow:hidden;
+}
+
+#myCanvas {
+    z-index: 4;
+    margin:0; 
+    padding:0; 
+    overflow:hidden; 
+    width:100vw; 
+    height:100vh
+}
+
+#yourScore {
+    color: magenta;
+    padding-top: 12vh;
+}
+
+#show_score {
+    font-weight: bold;
+    font-size: 25vh;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#highScore {
+    font-size: 6vh;
+    border-top: 4vh;
+    color: aqua;
+}        
+
+#beginning {
+    font-size: 8vh;
+    color: lime;
+}
+
+#gotomenu {
+    font-size: 8vh;
+    color: yellow;
+}
+
+#beginning:active {
+    color: green;
+}
+
+#gotomenu:active {
+    color: darkkhaki;
+}
+
+.over-content {
+    animation-name: overcontent;
+    animation-duration: 1s;
+}
+
+#levelup, #itemshield, iconshield {
+    position: absolute;
+    display: none;
+}
+
+#shop {
+    display: none;
+    background-color:rgb(54,54,54); 
+    width:100vw; 
+    height:100vh;
+}
+
+#topbuttons {
+    width: 90vw;
+    height: 5vw;
+    padding-top: 4vw;
+    padding-left: 5vw;
+}
+
+#shoptomenu {
+    height: 5vw;
+    width: 20vw;
+    float: left;
+}
+
+#shoptomenu:active, #restore:active, .buyitems:active {
+    opacity: 0.5;
+}
+
+#restore {
+    height: 5vw;
+    width: 20vw;
+    float: right;
+}
+
+#stufftobuy {
+    height: calc(100vh - 12vw);
+    width: 95vw;
+    padding-left: 5vw;
+    padding-top: 2vw;
+}
+
+#col1 {
+    height: calc(100vh - 14vw);
+    width: 45vw;
+    border-right: 1vw solid black;
+    float: left;
+    overflow: auto;
+}
+
+#col2 {
+    height: calc(100vh - 14vw);
+    width: 40vw;
+    float: right;
+    padding-right: 5vw;
+    overflow: auto;
+}
+
+.buyitems {
+    height: 10vw;
+    width: 40vw;
+    padding-bottom: 1vw;
+}
+
+@keyframes gameover {
+    from {left: 50%; width: 0; height: 100%;}
+    to   {left: 0; width: 100%; height: 100%;}
+}
+
+@keyframes overcontent {
+    from {opacity:0;}
+    to   {opacity:1;}
+}
+
+@keyframes chancepopup {
+    from {left: 50vw; top: 50vh; width: 0; height: 0;}
+    to   {left: 0; top: 0; width: 100vw; height: 100vh;}
+}
+
+@keyframes startfrompopup {
+    from {left:100vw; top:100vh; width:0; height:0;}
+    to   {left:30vw; top:30vh; width:40vw; height:30vh;}
+}
